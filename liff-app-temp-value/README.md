@@ -15,7 +15,7 @@ Developer Trial を利用して開発をするには、`liff.js` に書かれた
 
 1. GitHub 上でリポジトリを Fork
 2. GitHub Pages の設定から "Source" に "master branch" を選択
-3. 公開された GitHub Pages の URL に `liff-app-number-value/` を足したものを、LIFF エンドポイント URL に設定
+3. 公開された GitHub Pages の URL に `liff-app-temp-value/` を足したものを、LIFF エンドポイント URL に設定
 (例: https://line.github.io/line-things-starter/liff-app/)
 
 ## obnizを動作させる
