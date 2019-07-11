@@ -72,7 +72,7 @@ obniz.onconnect = async function () {
   obniz.ble.advertisement.start();
 
   writeCharacteristic.onwritefromremote = function(address, newvalue) {
-    
+
     console.log("remote address :", address);
     console.log("remote data :", newvalue);
 
@@ -83,10 +83,10 @@ obniz.onconnect = async function () {
 
   obniz.switch.onchange = async function(state) {
     if (state === "push") {
-      await notifyCharacteristic.writeWait([30]);
+      await notifyCharacteristic.writeWait([100]);
       notifyCharacteristic.notify();
     } else if (state === "none") {
-      await notifyCharacteristic.writeWait([60]);
+      await notifyCharacteristic.writeWait([255]);
       notifyCharacteristic.notify();
     }
   }
