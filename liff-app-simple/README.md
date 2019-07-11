@@ -22,7 +22,9 @@ Developer Trial を利用して開発をするには、`liff.js` に書かれた
 
 Developer Trial を利用して開発をするには、`obniz.js` に書かれた `USER_SERVICE_UUID` を生成された Service UUID に書き換えてください。
 
-フォルダ内の `obniz.js` を実行して obniz を動作させます。
+`YOUR_OBNIZ_ID_HERE` を動作させたいobniz IDに変更します。
+
+`obniz.js` を実行して obniz を動作させます。
 
 ```
 node obniz.js
