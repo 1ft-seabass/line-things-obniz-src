@@ -1,0 +1,14 @@
+{
+  "name": "liff-app-number-value",
+  "version": "1.0.0",
+  "description": "LINE Things Starter 向け LIFF アプリのサンプルコードです。\r 初期状態の Starter ファームウェアで動作する LIFF アプリのコードが含まれています。",
+  "main": "liff.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "obniz": "^2.2.0"
+  }
+}

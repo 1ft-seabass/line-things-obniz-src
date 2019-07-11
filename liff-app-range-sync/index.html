@@ -1,0 +1,77 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src=" https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="liff.js"></script>
+    <link rel="stylesheet" type="text/css" href="liff.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+  </head>
+
+  <body>
+    <!-- Title -->
+    <h2>liff-app-range-sync</h2>
+    <!-- <span id="USER_SERVICE_UUID" class="">USER_SERVICE_UUID</span> -->
+    <hr />
+    <p>
+      <img id="loading-animation" class="" src="loading.gif" height="14px" />
+      <span id="status" class="inactive">Device disconnected</span>
+    </p>
+    <hr />
+    <div id="controls" class="hidden">
+      <!-- Device Info Table -->
+      <table class="device-info-table">
+      <!--
+        <tr>
+          <th class="device-info-cell device-info-key">Name</th>
+          <td class="device-info-cell device-info-val" id="device-name"></td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">ID</th>
+          <td class="device-info-cell device-info-val" id="device-id"></td>
+        </tr>
+        <tr>
+          <th class="device-info-cell device-info-key">PSDI</th>
+          <td class="device-info-cell device-info-val" id="device-psdi"></td>
+        </tr>
+      -->
+        <tr>
+          <th class="device-info-cell device-info-key">obniz -> LIFF value</th>
+          <td class="device-info-cell device-info-val" id="obniz-value">obniz-value</td>
+        </tr>
+      <!--
+        <tr>
+          <th class="device-info-cell device-info-key">Click count</th>
+          <td class="device-info-cell device-info-val" id="click-count">0</td>
+        </tr>
+      -->
+      </table>
+      <hr />
+
+      <p class="range-field">
+          <label for="range-slider">Range Slider</label>
+          <input type="range" id="range-slider" min="0" max="100" />
+      </p>
+
+      <div class="switch">
+        <label>
+          Off
+          <input type="checkbox" id="btn-led-toggle">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+
+      <hr />
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+
+</html>
