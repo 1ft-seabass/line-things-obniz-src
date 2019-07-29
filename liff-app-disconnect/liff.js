@@ -186,6 +186,20 @@ function liffConnectToDevice(device) {
         // Show status connected
         uiToggleDeviceConnected(true);
 
+        // 接続時メッセージ
+        liff.sendMessages([
+            {
+                type:'text',
+                text:'LINE Thingsデバイスがつながりました！'
+            }
+            ])
+            .then(() => {
+                console.log('message sent');
+            })
+            .catch((err) => {
+                console.log('error', err);
+            });
+
         // Get service
         device.gatt.getPrimaryService(USER_SERVICE_UUID).then(service => {
             liffGetUserService(service);
@@ -204,11 +218,12 @@ function liffConnectToDevice(device) {
         const disconnectCallback = () => {
             // Show status disconnected
             uiToggleDeviceConnected(false);
-
+            
+            // メッセージ
             liff.sendMessages([
             {
                 type:'text',
-                text:'LINE Thingsデバイスが切断されました！'
+                text:'LINE ThingsデバイスがBluetooth切断されました！'
             }
             ])
             .then(() => {
